@@ -4,6 +4,6 @@ joomlaReplica: 3
 
 namespace: default
 
-wordpressImage:
-  name: wordpress
+homeImage:
+  name: player01sid/cms-home
   tag: 16

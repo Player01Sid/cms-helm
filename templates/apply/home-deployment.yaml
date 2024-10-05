@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: home-deployment
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: cms
+spec:
+  replicas: {{ .Values.wordpressReplica }}
+  selector:
+    matchLabels:
+      app: cms
+      name: home-pod  
+  template:
+    metadata:
+      name: home-pod
+      labels:
+        app: cms
+        name: home-pod
+    spec:
+      containers:
+      - name: cms-home
+        image: "{{ .Values.homeImage.name }}:{{ .Values.homeImage.tag }}"
+        ports:
+        - containerPort: 80
