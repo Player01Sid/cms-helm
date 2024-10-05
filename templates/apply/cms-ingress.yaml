@@ -15,7 +15,7 @@ spec:
     secretName: userapi-tls
   ingressClassName: {{ .Values.ingressClassName }}
   rules:
-  - host: {{ .Values.appName }}
+  - host: cmsid.crabdance.com
     http:
       paths:
       - path: /wordpress
@@ -46,10 +46,10 @@ spec:
             name: joomla
             port:
               number: 80
-      - path: /
-        pathType: Prefix
-        backend:
-          service:
-            name: home
-            port:
-              number: 80
+#      - path: /
+#        pathType: Prefix
+#        backend:
+#          service:
+#            name: home
+#            port:
+#              number: 80
