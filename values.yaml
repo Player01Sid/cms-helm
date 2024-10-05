@@ -1,4 +1,6 @@
 hostname: cmsid.crabdance.com
+ingressClassName: nginx-ingress
+
 wordpressReplica: 3
 joomlaReplica: 3
 
