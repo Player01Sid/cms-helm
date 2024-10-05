@@ -6,4 +6,4 @@ namespace: default
 
 homeImage:
   name: player01sid/cms-home
-  tag: 16
+  tag: 17
