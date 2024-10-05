@@ -5,14 +5,14 @@ metadata:
   namespace: {{ .Values.namespace }}
   annotations:
 #    cert-manager.io/cluster-issuer: "letsencrypt-issuer"
-#    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/rewrite-target: /
     traefik.ingress.kubernetes.io/rewrite-target: /
 spec:
   tls:
   - hosts:
     - cmsid.crabdance.com
     secretName: userapi-tls
-  ingressClassName: traefik
+  ingressClassName: {{ .Values.ingressClassName }}
   rules:
   - host: {{ .Values.appName }}
     http:
