@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: mysql-config
   namespace: {{ .Values.namespace }}
+  annotations:
+    argocd.argoproj.io/wave: "-2" 
 data:
   MYSQL_DATABASE: wordpress
   MYSQL_USER: user
