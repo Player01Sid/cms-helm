@@ -6,4 +6,4 @@ namespace: default
 
 wordpressImage:
   name: wordpress
-  tag: 15
+  tag: latest
