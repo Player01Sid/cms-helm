@@ -2,7 +2,7 @@ hostname: cmsid.crabdance.com
 ingressClassName: traefik
 
 wordpressReplica: 3
-joomlaReplica: 3
+joomlaReplica: 2
 
 namespace: default
 
