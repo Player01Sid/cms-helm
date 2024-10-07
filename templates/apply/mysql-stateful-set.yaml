@@ -49,12 +49,12 @@ spec:
         - mountPath: /var/lib/mysql
           name: mysql-storage
   volumeClaimTemplates:
-  #- metadata:
-  #    name: mysql-storage
-  #  spec:
-  #    accessModes: 
-  #      - ReadWriteOnce
-  #    resources:
-  #      requests:
-  #        storage: 1Gi
-  #    storageClassName: local-path
+  - metadata:
+      name: mysql-storage
+    spec:
+      accessModes: 
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 1Gi
+      storageClassName: local-path
