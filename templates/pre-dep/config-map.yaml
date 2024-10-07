@@ -5,7 +5,7 @@ metadata:
   namespace: {{ .Values.namespace }}
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/wave: "-2" 
+    #argocd.argoproj.io/wave: "-2" 
 data:
   MYSQL_DATABASE: wordpress
   MYSQL_USER: user
