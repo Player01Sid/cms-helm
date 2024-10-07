@@ -1,5 +1,5 @@
 hostname: cmsid.crabdance.com
-ingressClassName: nginx
+ingressClassName: traefik
 
 wordpressReplica: 3
 joomlaReplica: 3
