@@ -6,7 +6,7 @@ metadata:
   labels:
     app: cms
 spec:
-  replicas: {{ .Values.joomlaReplica }}
+  replicas: {{ .Values.joomla.replicas }}
   selector:
     matchLabels:
       app: cms
