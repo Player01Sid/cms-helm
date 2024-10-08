@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: cms-home
-        image: "{{ .Values.homeImage.name }}:{{ .Values.homeImage.tag }}"
+        image: "{{ .Values.home.image.name }}:{{ .Values.home.image.tag }}"
         ports:
         - containerPort: 80
