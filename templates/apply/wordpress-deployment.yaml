@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: wordpress
-        image: wordpress:latest
+        image: "{{ .Values.wordpress.image.name }}:{{ .Values.wordpress.image.tag }}"
         env:
         - name: WORDPRESS_DB_HOST
           value: database
