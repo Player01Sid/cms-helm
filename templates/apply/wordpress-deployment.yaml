@@ -6,7 +6,7 @@ metadata:
   labels:
     app: cms
 spec:
-  replicas: {{ .Values.wordpressReplica }}
+  replicas: {{ .Values.wordpress.replicas }}
   selector:
     matchLabels:
       app: cms
