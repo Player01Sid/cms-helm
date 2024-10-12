@@ -4,7 +4,7 @@ metadata:
   name: mysql-storage
   namespace: {{ .Values.namespace }}
   annotations:
-    #argocd.argoproj.io/wave: "-2"
+    argocd.argoproj.io/wave: "-2"
     #argocd.argoproj.io/hook: PreSync
     argocd.argoproj.io/sync-options: PruneLast=true
 spec:
