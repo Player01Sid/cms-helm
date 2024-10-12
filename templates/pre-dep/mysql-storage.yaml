@@ -15,4 +15,4 @@ spec:
   persistentVolumeReclaimPolicy: Delete
   storageClassName: local-path
   hostPath:
-    path: /data/mysql
+    path: /data/mysql/pv
