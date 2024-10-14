@@ -5,6 +5,7 @@ data:
 kind: Secret
 metadata:
   annotations:
+    argocd.argoproj.io/wave: "-2"
     cert-manager.io/alt-names: cmsid.crabdance.com
     cert-manager.io/certificate-name: userapi-cert
     cert-manager.io/common-name: cmsid.crabdance.com
