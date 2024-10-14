@@ -16,7 +16,7 @@ metadata:
   creationTimestamp: "2024-09-27T11:31:32Z"
   labels:
     controller.cert-manager.io/fao: "true"
-  name: userapi-tls
+  name: cms-ingress-secret
   namespace: {{ .Values.namespace }}
   resourceVersion: "34367"
   uid: f472a13c-12b2-43f3-a0b8-efc9ec8bc675
