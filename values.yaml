@@ -6,13 +6,11 @@ namespace: default
 wordpress:
   image:
     name: docker.io/library/wordpress
-    tag: 1.0.30
   replicas: 2
 
 joomla:
   image:
     name: docker.io/library/joomla
-    tag: 1.0.30
   replicas: 2
 
 home:
