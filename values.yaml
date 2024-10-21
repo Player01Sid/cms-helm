@@ -5,12 +5,12 @@ namespace: default
 
 wordpress:
   image:
-    name: docker.io/library/wordpress
+    name: wordpress
   replicas: 2
 
 joomla:
   image:
-    name: docker.io/library/joomla
+    name: joomla
   replicas: 2
 
 home:
