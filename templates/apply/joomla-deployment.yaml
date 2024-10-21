@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: joomla
-        image: "{{ .Values.joomla.image.name }}:{{ .Values.joomla.image.tag }}"
+        image: "{{ .Values.joomla.image.name }}:latest"
         env:
         - name: JOOMLA_DB_HOST
           value: database
