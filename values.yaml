@@ -16,5 +16,5 @@ joomla:
 home:
   image:
     name: player01sid/cms-home
-    tag: 1.0.31
+    tag: 1.0.32
   replicas: 2
