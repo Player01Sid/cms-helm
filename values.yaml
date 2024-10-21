@@ -6,17 +6,17 @@ namespace: default
 wordpress:
   image:
     name: wordpress
-    tag: 1.0.29
+    tag: 1.0.30
   replicas: 2
 
 joomla:
   image:
     name: joomla
-    tag: 1.0.29
+    tag: 1.0.30
   replicas: 2
 
 home:
   image:
     name: player01sid/cms-home
-    tag: 1.0.29
+    tag: 1.0.30
   replicas: 2
